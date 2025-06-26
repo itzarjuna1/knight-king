@@ -30,13 +30,13 @@ async def start(_, msg):
         ],
         [
           InlineKeyboardButton("𝗛ᴇʟᴘ", url="https://t.me/PURVI_UPDATES"),
-          InlineKeyboardButton("⍣ ፝֠֩ ̶ ̶ꭘⷪ ͓ ꯭፝֠֩͠ ̶꯭ ̶͓𝐑꯭α͕υ꯭𝛅͔ʜ꯭α꯭ɴ͓", url="https://t.me/ll_ALPHA_BABY_lll"),
+          InlineKeyboardButton("メ♡ 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘 ❘ ❯ </𝟑𓂃ֶꪳ♾️", url="https://t.me/Destiny_Infinity_Og"),
           ],
                [
-                InlineKeyboardButton("𝗧ᴇᴀᴍ 𝗣ᴜʀᴠɪ 𝗕ᴏᴛs", url=f"https://t.me/PURVI_SUPPORT"),
+                InlineKeyboardButton("𝗗𝗔𝗥𝗞 𝗕𝗢𝗧𝗦 [🇮🇳]", url=f"https://t.me/dark_x_knight_musiczz_support"),
 ],
 [
-InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/PURVI_MUSIC_BOT"),
+InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/Leo_musicz_bot"),
 
         ]]
     
