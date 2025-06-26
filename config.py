@@ -48,16 +48,16 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PURVI_SUPPORT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/PURVI_UPDATES")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/who_cares_qt")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Destiny_Infinity_Og")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "6fb7e1766693439b86ec57e3deb3c36f"")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "da3f94c6a68d49f6b64a7216ec9eb905")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
@@ -87,10 +87,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/rca1m3.jpg"
+    "START_IMG_URL", "https://graph.org/file/1951b91d265c94bb90d2f-70bea2d338ca641e75.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/9cevdg.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/9cevdg.jpg "
 )
 PLAYLIST_IMG_URL = "https://files.catbox.moe/i493lf.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/i0qmgf.jpg"
