@@ -5,61 +5,61 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+# Telegram API (my.telegram.org)
+API_ID = int(getenv("API_ID", "20977551"))
+API_HASH = getenv("API_HASH", "c5c11856866072c7b12a4e32e6a0a0f9")
 
-# Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+# Bot Token (@BotFather)
+BOT_TOKEN = getenv("BOT_TOKEN", "8063486217:AAHST_XwijXhNnKQMxUj0jf5jokOepcezss")
 
-# Optional Defaults
+# Owner and Bot Info
 OWNER_USERNAME = getenv("OWNER_USERNAME", "ll_ALPHA_BABY_lll")
 BOT_USERNAME = getenv("BOT_USERNAME", "CuddleBuddhuu_Bot")
 BOT_NAME = getenv("BOT_NAME", "Cuddlexbuddhugx")
 
-# Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+# Database
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
+# Limits & IDs
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002898967884"))
+OWNER_ID = int(getenv("OWNER_ID", "6514377146"))
 
-# Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002898967884))
-
-# Your Telegram ID
-OWNER_ID = int(getenv("OWNER_ID"))
-
-# Heroku credentials
+# Heroku (optional)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
+# Git Updates
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Gxinfinity/ANYA_MUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv("GIT_TOKEN", None)  # Optional if repo is private
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 
+# Support Links
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_x_knight_musiczz_support")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+O9KQQMyfaxJiMjA1")
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False").lower() == "true"
+# Auto Leave
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
-# Spotify Credentials
+# Spotify
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Playlist fetch limit
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
-# File size limits
+# File Size Limits
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
-# String sessions
-STRING1 = getenv("STRING_SESSION","BQFAF48ALuDDReGs2a_fTLJhTtJndJUdL7Po2GwHaGQ1Pu-_CY_5IimZuLqyaEthve0zsM2YauCzwYYxzK-VkE6Sic5YwXpZWUliG_cI8jhFYP2cKZJpjhTOuH7p-DuU1mTnMmggiR28ccrYd5azpqHQkYgGv39ozlE0L7RLMfNZwLLI4etpWwhdkbrevxJUlXSrBnTOtZoM0fLJUoKT0sZmye4UUSQ5sKpbOT1KlnzxGTzCgwXpMLV8K01EQVPFjifN7cgRVop5Ho9y-SXlIdziVySmyBvK4kKumNLj15W4wj5OG-pMBzPUpOGp3sk_SigjvYqRApwVwfV0lQH0_g8BAzHd5AAAAAHdS58tAA")
-STRING2 = getenv("STRING_SESSION2")
-STRING3 = getenv("STRING_SESSION3")
-STRING4 = getenv("STRING_SESSION4")
-STRING5 = getenv("STRING_SESSION5")
+# Session Strings
+STRING1 = getenv("STRING_SESSION", "BQFAF48ALuDDReGs2a_fTLJhTtJndJUdL7Po2GwHaGQ1Pu-_CY_5IimZuLqyaEthve0zsM2YauCzwYYxzK-VkE6Sic5YwXpZWUliG_cI8jhFYP2cKZJpjhTOuH7p-DuU1mTnMmggiR28ccrYd5azpqHQkYgGv39ozlE0L7RLMfNZwLLI4etpWwhdkbrevxJUlXSrBnTOtZoM0fLJUoKT0sZmye4UUSQ5sKpbOT1KlnzxGTzCgwXpMLV8K01EQVPFjifN7cgRVop5Ho9y-SXlIdziVySmyBvK4kKumNLj15W4wj5OG-pMBzPUpOGp3sk_SigjvYqRApwVwfV0lQH0_g8BAzHd5AAAAAHdS58tAA")
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
 
-# Bot globals
+# Runtime States
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
@@ -67,7 +67,7 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
-# Image URLs
+# UI Images
 START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/1951b91d265c94bb90d2f-70bea2d338ca641e75.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/9cevdg.jpg")
 PLAYLIST_IMG_URL = "https://files.catbox.moe/i493lf.jpg"
@@ -81,16 +81,16 @@ SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
 
-# Time converter
+# Time convert
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
-# URL validation
-if SUPPORT_CHANNEL and not re.match(r"^https?://", SUPPORT_CHANNEL):
-    raise SystemExit("[ERROR] - SUPPORT_CHANNEL URL is invalid. It must start with https://")
+# Support URL Validation
+if SUPPORT_CHANNEL and not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    raise SystemExit("[ERROR] - SUPPORT_CHANNEL must start with https://")
 
-if SUPPORT_CHAT and not re.match(r"^https?://", SUPPORT_CHAT):
-    raise SystemExit("[ERROR] - SUPPORT_CHAT URL is invalid. It must start with https://")
+if SUPPORT_CHAT and not re.match("(?:http|https)://", SUPPORT_CHAT):
+    raise SystemExit("[ERROR] - SUPPORT_CHAT must start with https://")
