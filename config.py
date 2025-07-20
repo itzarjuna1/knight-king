@@ -10,7 +10,7 @@ API_ID = int(getenv("API_ID", "20977551"))
 API_HASH = getenv("API_HASH", "c5c11856866072c7b12a4e32e6a0a0f9")
 
 # Bot Token (@BotFather)
-BOT_TOKEN = getenv("BOT_TOKEN", "8063486217:AAHST_XwijXhNnKQMxUj0jf5jokOepcezss")
+BOT_TOKEN = getenv("BOT_TOKEN", "8063486217:AAH3_0XjlDtdUWSYA_84H-RbA5_DU9uOtjo")
 
 # Owner and Bot Info
 OWNER_USERNAME = getenv("OWNER_USERNAME", "ll_ALPHA_BABY_lll")
