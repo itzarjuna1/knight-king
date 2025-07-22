@@ -8,9 +8,8 @@ from pyrogram.types import InlineKeyboardMarkup
 
 from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
-#from pytgcalls.types.stream import StreamAudioEnded
-from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
+from pytgcalls.types.input_streams import AudioPiped, AudioVideoPiped
+from pytgcalls.types.input_streams.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
 
 import config
