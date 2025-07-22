@@ -29,3 +29,4 @@ wget
 yt-dlp
 bing_image_downloader
 bing-image-urls
+py-tgcalls==2.2.5
