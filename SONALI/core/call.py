@@ -5,9 +5,9 @@ from typing import Union
 
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
-from py_tgcalls import PyTgCalls
-from py_tgcalls.types import StreamType
-from py_tgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
+from pytgcalls import PyTgCalls
+from pytgcalls.types import StreamType
+from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
 
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
