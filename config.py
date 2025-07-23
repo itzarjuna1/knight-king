@@ -22,7 +22,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@clust
 
 # Limits & IDs
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002898967884"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002507632106"))
 OWNER_ID = int(getenv("OWNER_ID", "6514377146"))
 
 # Heroku (optional)
